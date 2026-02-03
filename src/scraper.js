@@ -101,8 +101,6 @@ async function generateRSSFeed(articles) {
     feed_url: 'https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml',
     site_url: CONFIG.baseUrl,
     language: 'fr',
-    pubDate: new Date().toUTCString(),
-    ttl: 360,
     generator: 'GitHub Actions RSS Generator'
   });
   
