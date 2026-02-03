@@ -1,0 +1,16 @@
+{
+  "name": "robert-schuman-rss-feed",
+  "version": "1.0.0",
+  "description": "Générateur automatique de flux RSS pour la Fondation Robert Schuman",
+  "main": "src/scraper.js",
+  "scripts": {
+    "generate": "node src/scraper.js"
+  },
+  "keywords": ["rss", "puppeteer", "scraper", "robert-schuman"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "rss": "^1.2.2"
+  }
+}
