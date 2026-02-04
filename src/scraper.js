@@ -11,6 +11,24 @@ const CONFIG = {
   maxArticles: 20
 };
 
+// Fonction pour parser une date depuis le texte du titre
+function parseDateFromTitle(title) {
+  // Cherche un pattern comme "- 2/2/2026" ou "- 11/24/2025" à la fin du titre
+  const dateMatch = title.match(/\s+-\s+(\d{1,2})\/(\d{1,2})\/(\d{4})\s*$/);
+  
+  if (dateMatch) {
+    const [, month, day, year] = dateMatch;
+    // Crée une date en format ISO (YYYY-MM-DD)
+    const date = new Date(`${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
+    
+    if (!isNaN(date.getTime())) {
+      return date;
+    }
+  }
+  
+  return null;
+}
+
 async function scrapeArticles() {
   console.log('🚀 Lancement du scraping...');
   
@@ -54,28 +72,25 @@ async function scrapeArticles() {
             title = heading ? heading.textContent.trim() : 'Article sans titre';
           }
           
-          const dateElement = container.querySelector('time, .date, [class*="date"]');
-          let pubDate = null;
-          if (dateElement) {
-            const dateText = dateElement.getAttribute('datetime') || dateElement.textContent;
-            pubDate = new Date(dateText);
-            if (isNaN(pubDate.getTime())) pubDate = null;
-          }
-          
           const descElement = container.querySelector('p, .description, .summary, [class*="excerpt"]');
           const description = descElement ? descElement.textContent.trim() : '';
           
           uniqueArticles.set(href, {
             title: title,
             url: href.startsWith('http') ? href : baseUrl + href,
-            description: description,
-            pubDate: pubDate ? pubDate.toISOString() : new Date().toISOString()
+            description: description
           });
         }
       });
       
       return Array.from(uniqueArticles.values()).slice(0, maxArticles);
     }, CONFIG.articleSelector, CONFIG.baseUrl, CONFIG.maxArticles);
+    
+    // Parser les dates depuis les titres
+    articles.forEach(article => {
+      const dateFromTitle = parseDateFromTitle(article.title);
+      article.pubDate = dateFromTitle ? dateFromTitle.toISOString() : new Date().toISOString();
+    });
     
     console.log(`✅ ${articles.length} articles trouvés`);
     
@@ -125,33 +140,32 @@ async function saveFeedToFile(xmlContent) {
   const htmlContent = `<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flux RSS - Fondation Robert Schuman</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
-        h1 { color: #003399; }
-        .info { background: #f0f0f0; padding: 15px; border-radius: 5px; margin: 20px 0; }
-        .feed-url { background: white; padding: 10px; border: 1px solid #ddd; word-break: break-all; }
-        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flux RSS - Fondation Robert Schuman</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+    h1 { color: #003399; }
+    .info { background: #f0f0f0; padding: 15px; border-radius: 5px; margin: 20px 0; }
+    .feed-url { background: white; padding: 10px; border: 1px solid #ddd; word-break: break-all; }
+    code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+  </style>
 </head>
 <body>
-    <h1>📡 Flux RSS - Fondation Robert Schuman</h1>
-    <div class="info">
-        <h2>URL du flux RSS :</h2>
-        <div class="feed-url">
-            <code>https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml</code>
-        </div>
-        <p><strong>Comment l'utiliser :</strong></p>
-        <ul>
-            <li>Copiez l'URL ci-dessus</li>
-            <li>Ajoutez-la dans votre lecteur RSS préféré (Feedly, Inoreader, NetNewsWire, etc.)</li>
-            <li>Le flux se met à jour automatiquement toutes les 6 heures</li>
-        </ul>
-        <p><strong>Dernière mise à jour :</strong> ${new Date().toLocaleString('fr-FR')}</p>
+  <h1>📡 Flux RSS - Fondation Robert Schuman</h1>
+  <div class="info">
+    <h2>URL du flux RSS :</h2>
+    <div class="feed-url">
+      <code>https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml</code>
     </div>
-    <p><a href="feed.xml">Voir le fichier XML brut</a></p>
+    <p><strong>Comment l'utiliser :</strong></p>
+    <ul>
+      <li>Copiez l'URL ci-dessus</li>
+      <li>Ajoutez-la dans votre lecteur RSS préféré (Feedly, Inoreader, NetNewsWire, etc.)</li>
+      <li>Le flux se met à jour automatiquement toutes les 6 heures</li>
+    </ul>
+  </div>
+  <p><a href="feed.xml">Voir le fichier XML brut</a></p>
 </body>
 </html>`;
   
