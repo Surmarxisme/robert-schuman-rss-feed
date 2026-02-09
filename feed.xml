@@ -4,12 +4,19 @@
         <description><![CDATA[Les dernières publications de la Fondation Robert Schuman]]></description>
         <link>https://www.robert-schuman.eu</link>
         <generator>GitHub Actions RSS Generator</generator>
-        <lastBuildDate>Mon, 09 Feb 2026 07:13:41 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Feb 2026 13:21:18 GMT</lastBuildDate>
         <atom:link href="https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[fr]]></language>
         <item>
-            <title><![CDATA[L'immigration qualifiée et la compétitivité de l'Union européenne :  attractivité et options politiquesLa migration reste l’un des enjeux les plus complexes et politiquement sensibles de l’agenda européen. Elle couvre une grande diversité de réalités : des arrivées irrégulières<...Lire la suiteOlena Oliinyk  - 2/2/2026]]></title>
-            <description><![CDATA[La migration reste l’un des enjeux les plus complexes et politiquement sensibles de l’agenda européen. Elle couvre une grande diversité de réalités : des arrivées irrégulières<...Lire la suite]]></description>
+            <title><![CDATA[Vers une Europe souveraine et résiliente :  l'urgence d'une doctrine globale de sécuritéL'Union européenne se trouve à un carrefour stratégique sans précédent. Alors que le monde fait face à une reconfiguration géopolitique majeure marquée par des conflits persistants, des tensions commerciales et des crises énergétiques, l'Europe doit répondre à des menaces hybrides de plus en plus complexes et interconnectées qui remettent en cause les fondements de notre sécurité collectiv...Lire la suitePatrice Cardot  - 2/9/2026]]></title>
+            <description><![CDATA[L'Union européenne se trouve à un carrefour stratégique sans précédent. Alors que le monde fait face à une reconfiguration géopolitique majeure marquée par des conflits persistants, des tensions commerciales et des crises énergétiques, l'Europe doit répondre à des menaces hybrides de plus en plus complexes et interconnectées qui remettent en cause les fondements de notre sécurité collectiv...Lire la suite]]></description>
+            <link>https://www.robert-schuman.eu/fr/questions-d-europe/821-vers-une-europe-souveraine-et-resiliente-l-urgence-d-une-doctrine-globale-de-securite</link>
+            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/821-vers-une-europe-souveraine-et-resiliente-l-urgence-d-une-doctrine-globale-de-securite</guid>
+            <pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[L'immigration qualifiée et la compétitivité de l'Union européenne :  attractivité et options politiquesOlena Oliinyk  - 2/2/2026]]></title>
+            <description><![CDATA[L'immigration qualifiée et la compétitivité de l'Union européenne :  attractivité et options politiques]]></description>
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/820-l-immigration-qualifiee-et-la-competitivite-de-l-union-europeenne-attractivite-et-options-politiques</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/820-l-immigration-qualifiee-et-la-competitivite-de-l-union-europeenne-attractivite-et-options-politiques</guid>
             <pubDate>Mon, 02 Feb 2026 00:00:00 GMT</pubDate>
@@ -76,13 +83,6 @@
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/810-l-euro-numerique-a-l-aube-d-un-nouveau-monde-monetaire-enjeux-geopolitiques-blocages-institutionnels-et-feuille-de-route</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/810-l-euro-numerique-a-l-aube-d-un-nouveau-monde-monetaire-enjeux-geopolitiques-blocages-institutionnels-et-feuille-de-route</guid>
             <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[L'Euro numérique à l'aube d'un nouveau monde monétairePatrice Cardot  - 11/3/2025]]></title>
-            <description><![CDATA[L'Euro numérique à l'aube d'un nouveau monde monétaire]]></description>
-            <link>https://www.robert-schuman.eu/fr/questions-d-europe/809-l-euro-numerique-a-l-aube-d-un-nouveau-monde-monetaire</link>
-            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/809-l-euro-numerique-a-l-aube-d-un-nouveau-monde-monetaire</guid>
-            <pubDate>Mon, 03 Nov 2025 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
