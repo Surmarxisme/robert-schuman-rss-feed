@@ -7,31 +7,32 @@ const CONFIG = {
   url: 'https://www.robert-schuman.eu/publications/questions-et-entretiens-d-europe-1',
   baseUrl: 'https://www.robert-schuman.eu',
   articleSelector: 'a[href*="/fr/questions-d-europe/"]',
-  waitTime: 5000,
-  maxArticles: 20
+  maxArticles: 20,
+  navigationTimeout: 30000,  // 30s max pour charger la page
+  selectorTimeout: 10000     // 10s max pour trouver les articles
 };
 
 // Fonction pour parser une date depuis le texte du titre
 function parseDateFromTitle(title) {
   // Cherche un pattern comme "- 2/2/2026" ou "- 11/24/2025" à la fin du titre
   const dateMatch = title.match(/\s+-\s+(\d{1,2})\/(\d{1,2})\/(\d{4})\s*$/);
-  
+
   if (dateMatch) {
     const [, month, day, year] = dateMatch;
     // Crée une date en format ISO (YYYY-MM-DD)
     const date = new Date(`${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`);
-    
+
     if (!isNaN(date.getTime())) {
       return date;
     }
   }
-  
+
   return null;
 }
 
 async function scrapeArticles() {
-  console.log('🚀 Lancement du scraping...');
-  
+  console.log('\ud83d\ude80 Lancement du scraping...');
+
   const browser = await puppeteer.launch({
     headless: 'new',
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu']
@@ -39,42 +40,54 @@ async function scrapeArticles() {
 
   try {
     const page = await browser.newPage();
+
+    // Timeout global sur la page : coupe toute opération bloquante après 60s
+    page.setDefaultTimeout(60000);
+    page.setDefaultNavigationTimeout(CONFIG.navigationTimeout);
+
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
     await page.setViewport({ width: 1920, height: 1080 });
-    
-    console.log(`📡 Navigation vers ${CONFIG.url}...`);
-    await page.goto(CONFIG.url, { waitUntil: 'networkidle0', timeout: 30000 });
-    
-    console.log('⏳ Attente du chargement du contenu dynamique...');
-    await page.waitForTimeout(CONFIG.waitTime);
-    
+
+    console.log(`\ud83d\udce1 Navigation vers ${CONFIG.url}...`);
+
+    // Utilise 'domcontentloaded' au lieu de 'networkidle0'
+    // 'networkidle0' attend que TOUT le réseau soit silencieux (peut bloquer indéfiniment)
+    await page.goto(CONFIG.url, {
+      waitUntil: 'domcontentloaded',
+      timeout: CONFIG.navigationTimeout
+    });
+
+    console.log('\u23f3 Attente du sélecteur d\'articles...');
+
     try {
-      await page.waitForSelector(CONFIG.articleSelector, { timeout: 10000 });
+      await page.waitForSelector(CONFIG.articleSelector, {
+        timeout: CONFIG.selectorTimeout
+      });
     } catch (error) {
-      console.error('❌ Les sélecteurs n\'ont pas été trouvés.');
-      await page.screenshot({ path: 'debug-screenshot.png', fullPage: true });
-      console.log('📸 Capture sauvegardée : debug-screenshot.png');
+      console.warn('\u26a0\ufe0f Sélecteur non trouvé dans les délais, tentative d\'extraction quand même...');
     }
-    
-    console.log('🔍 Extraction des articles...');
+
+    console.log('\ud83d\udd0d Extraction des articles...');
+
     const articles = await page.evaluate((selector, baseUrl, maxArticles) => {
       const links = Array.from(document.querySelectorAll(selector));
       const uniqueArticles = new Map();
-      
+
       links.forEach(link => {
         const href = link.href;
+
         if (!uniqueArticles.has(href)) {
           const container = link.closest('article, div, li') || link;
-          
           let title = link.textContent.trim();
+
           if (!title) {
             const heading = container.querySelector('h1, h2, h3, h4, h5, h6');
             title = heading ? heading.textContent.trim() : 'Article sans titre';
           }
-          
+
           const descElement = container.querySelector('p, .description, .summary, [class*="excerpt"]');
           const description = descElement ? descElement.textContent.trim() : '';
-          
+
           uniqueArticles.set(href, {
             title: title,
             url: href.startsWith('http') ? href : baseUrl + href,
@@ -82,25 +95,25 @@ async function scrapeArticles() {
           });
         }
       });
-      
+
       return Array.from(uniqueArticles.values()).slice(0, maxArticles);
     }, CONFIG.articleSelector, CONFIG.baseUrl, CONFIG.maxArticles);
-    
+
     // Parser les dates depuis les titres
     articles.forEach(article => {
       const dateFromTitle = parseDateFromTitle(article.title);
       article.pubDate = dateFromTitle ? dateFromTitle.toISOString() : new Date().toISOString();
     });
-    
-    console.log(`✅ ${articles.length} articles trouvés`);
-    
+
+    console.log(`\u2705 ${articles.length} articles trouvés`);
+
     if (articles.length === 0) {
-      console.warn('⚠️ Aucun article trouvé.');
+      console.warn('\u26a0\ufe0f Aucun article trouvé.');
     }
-    
+
     await browser.close();
     return articles;
-    
+
   } catch (error) {
     await browser.close();
     throw error;
@@ -108,8 +121,8 @@ async function scrapeArticles() {
 }
 
 async function generateRSSFeed(articles) {
-  console.log('📝 Génération du flux RSS...');
-  
+  console.log('\ud83d\udcdd Génération du flux RSS...');
+
   const feed = new RSS({
     title: 'Fondation Robert Schuman - Questions d\'Europe',
     description: 'Les dernières publications de la Fondation Robert Schuman',
@@ -118,7 +131,7 @@ async function generateRSSFeed(articles) {
     language: 'fr',
     generator: 'GitHub Actions RSS Generator'
   });
-  
+
   articles.forEach(article => {
     feed.item({
       title: article.title,
@@ -128,15 +141,15 @@ async function generateRSSFeed(articles) {
       date: article.pubDate
     });
   });
-  
+
   return feed.xml({ indent: true });
 }
 
 async function saveFeedToFile(xmlContent) {
   const feedPath = path.join(__dirname, '..', 'feed.xml');
   fs.writeFileSync(feedPath, xmlContent, 'utf8');
-  console.log(`✅ Flux RSS sauvegardé : ${feedPath}`);
-  
+  console.log(`\u2705 Flux RSS sauvegardé : ${feedPath}`);
+
   const htmlContent = `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -152,49 +165,47 @@ async function saveFeedToFile(xmlContent) {
   </style>
 </head>
 <body>
-  <h1>📡 Flux RSS - Fondation Robert Schuman</h1>
+  <h1>\ud83d\udce1 Flux RSS - Fondation Robert Schuman</h1>
   <div class="info">
     <h2>URL du flux RSS :</h2>
-    <div class="feed-url">
-      <code>https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml</code>
-    </div>
-    <p><strong>Comment l'utiliser :</strong></p>
-    <ul>
-      <li>Copiez l'URL ci-dessus</li>
-      <li>Ajoutez-la dans votre lecteur RSS préféré (Feedly, Inoreader, NetNewsWire, etc.)</li>
-      <li>Le flux se met à jour automatiquement toutes les 6 heures</li>
-    </ul>
+    <div class="feed-url">https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml</div>
   </div>
-  <p><a href="feed.xml">Voir le fichier XML brut</a></p>
+  <h2>Comment l'utiliser :</h2>
+  <ul>
+    <li>Copiez l'URL ci-dessus</li>
+    <li>Ajoutez-la dans votre lecteur RSS préféré (Feedly, Inoreader, NetNewsWire, etc.)</li>
+    <li>Le flux se met à jour automatiquement toutes les 6 heures</li>
+  </ul>
+  <a href="feed.xml">Voir le fichier XML brut</a>
 </body>
 </html>`;
-  
+
   const htmlPath = path.join(__dirname, '..', 'index.html');
   fs.writeFileSync(htmlPath, htmlContent, 'utf8');
-  console.log(`✅ Page HTML sauvegardée : ${htmlPath}`);
+  console.log(`\u2705 Page HTML sauvegardée : ${htmlPath}`);
 }
 
 async function main() {
   try {
-    console.log('═══════════════════════════════════════');
-    console.log('🤖 RSS Generator - Fondation Robert Schuman');
-    console.log('═══════════════════════════════════════\n');
-    
+    console.log('\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550');
+    console.log('\ud83e\udd16 RSS Generator - Fondation Robert Schuman');
+    console.log('\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n');
+
     const articles = await scrapeArticles();
-    
+
     if (articles.length === 0) {
       throw new Error('Aucun article trouvé.');
     }
-    
+
     const xmlContent = await generateRSSFeed(articles);
     await saveFeedToFile(xmlContent);
-    
-    console.log('\n═══════════════════════════════════════');
-    console.log('✨ Génération terminée avec succès !');
-    console.log('═══════════════════════════════════════');
-    
+
+    console.log('\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550');
+    console.log('\u2728 Génération terminée avec succès !');
+    console.log('\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550');
+
   } catch (error) {
-    console.error('\n❌ ERREUR:', error.message);
+    console.error('\n\u274c ERREUR:', error.message);
     console.error(error.stack);
     process.exit(1);
   }
