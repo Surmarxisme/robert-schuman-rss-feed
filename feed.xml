@@ -4,12 +4,23 @@
         <description><![CDATA[Les dernières publications de la Fondation Robert Schuman]]></description>
         <link>https://www.robert-schuman.eu</link>
         <generator>GitHub Actions RSS Generator</generator>
-        <lastBuildDate>Mon, 23 Mar 2026 02:38:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Mar 2026 13:23:10 GMT</lastBuildDate>
         <atom:link href="https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[fr]]></language>
         <item>
-            <title><![CDATA[Les opérations militaires de l'Union européenne - Partie 1Le débat sur le financement européen de la défense et, plus particulièrement, sur le financement des capacités militaires est lancé. L’enjeu est industriel, militaire, stratégique et politique. Cette phase de bouillonnement est l’acte II de l’investissement de l’Union européenne dans les questions militaires. ...Lire la suiteNicolas-Jean Brehon  - 3/16/2026]]></title>
-            <description><![CDATA[Le débat sur le financement européen de la défense et, plus particulièrement, sur le financement des capacités militaires est lancé. L’enjeu est industriel, militaire, stratégique et politique. Cette phase de bouillonnement est l’acte II de l’investissement de l’Union européenne dans les questions militaires. ...Lire la suite]]></description>
+            <title><![CDATA[Les opérations militaires de l'Union européenne - Partie 2II - Essai d’évaluation des missions et interventions extérieures
+2.1 Le point de vue diplomatique
+Leur enjeu est énorme : les opérations militaires sont un élément de la présence internationale et une opération extérieure est une opération politique avant d’être une opération militaire. Un échec aurait signifié la mort de la PSDC et l’Europe aurait dû r...Lire la suiteNicolas-Jean Brehon  - 3/23/2026]]></title>
+            <description><![CDATA[II - Essai d’évaluation des missions et interventions extérieures
+2.1 Le point de vue diplomatique
+Leur enjeu est énorme : les opérations militaires sont un élément de la présence internationale et une opération extérieure est une opération politique avant d’être une opération militaire. Un échec aurait signifié la mort de la PSDC et l’Europe aurait dû r...Lire la suite]]></description>
+            <link>https://www.robert-schuman.eu/fr/questions-d-europe/827-les-operations-militaires-de-l-union-europeenne-partie-2</link>
+            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/827-les-operations-militaires-de-l-union-europeenne-partie-2</guid>
+            <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Les opérations militaires de l'Union européenne - Partie 1Nicolas-Jean Brehon  - 3/16/2026]]></title>
+            <description><![CDATA[Les opérations militaires de l'Union européenne - Partie 1]]></description>
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/826-les-operations-militaires-de-l-union-europeenne-partie-1</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/826-les-operations-militaires-de-l-union-europeenne-partie-1</guid>
             <pubDate>Mon, 16 Mar 2026 00:00:00 GMT</pubDate>
@@ -76,13 +87,6 @@
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/817-la-formulation-strategique-europeenne-sur-la-securite-technologique-les-defis-de-la-chine</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/817-la-formulation-strategique-europeenne-sur-la-securite-technologique-les-defis-de-la-chine</guid>
             <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Faut-il s'inquiéter pour la compétitivité européenne ?Olivier Perquel  - 12/15/2025]]></title>
-            <description><![CDATA[Faut-il s'inquiéter pour la compétitivité européenne ?]]></description>
-            <link>https://www.robert-schuman.eu/fr/questions-d-europe/815-faut-il-s-inquieter-pour-la-competitivite-europeenne</link>
-            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/815-faut-il-s-inquieter-pour-la-competitivite-europeenne</guid>
-            <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
