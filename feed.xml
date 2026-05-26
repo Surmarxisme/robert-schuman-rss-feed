@@ -4,12 +4,21 @@
         <description><![CDATA[Les dernières publications de la Fondation Robert Schuman]]></description>
         <link>https://www.robert-schuman.eu</link>
         <generator>GitHub Actions RSS Generator</generator>
-        <lastBuildDate>Tue, 26 May 2026 03:55:54 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 May 2026 15:44:06 GMT</lastBuildDate>
         <atom:link href="https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[fr]]></language>
         <item>
-            <title><![CDATA[Les villes intermédiaires, angle mort de la cohésion européenneLorsque Jacques Delors a lancé en 1988 la réforme des fonds structurels, qui a donné naissance à la politique européenne de cohésion telle que nous la connaissons, l’objectif était clair : réduire les écarts de développement entre les régions de la Communauté, condition indispensable à la réussite du marché unique. Le premier « paquet Delors » (1989–1993) a cr&eacut...Lire la suiteFabien Verdier  - 5/18/2026]]></title>
-            <description><![CDATA[Lorsque Jacques Delors a lancé en 1988 la réforme des fonds structurels, qui a donné naissance à la politique européenne de cohésion telle que nous la connaissons, l’objectif était clair : réduire les écarts de développement entre les régions de la Communauté, condition indispensable à la réussite du marché unique. Le premier « paquet Delors » (1989–1993) a cr&eacut...Lire la suite]]></description>
+            <title><![CDATA[Le grand tournantL’Europe n’a jamais changé autant et aussi vite que ces cinq dernières années. Les évènements en sont les moteurs. La pandémie l’avait mise à l’épreuve ; les guerres, puis Trump l’ont défiée. Ils n’étaient pas prévisibles et nul ne peut affirmer a posteriori qu’il avait anticipé ces ruptures profondes avec l’ordre ancien.
+Les Europé...Lire la suiteJean-Dominique Giuliani  - 5/26/2026]]></title>
+            <description><![CDATA[L’Europe n’a jamais changé autant et aussi vite que ces cinq dernières années. Les évènements en sont les moteurs. La pandémie l’avait mise à l’épreuve ; les guerres, puis Trump l’ont défiée. Ils n’étaient pas prévisibles et nul ne peut affirmer a posteriori qu’il avait anticipé ces ruptures profondes avec l’ordre ancien.
+Les Europé...Lire la suite]]></description>
+            <link>https://www.robert-schuman.eu/fr/questions-d-europe/836-le-grand-tournant</link>
+            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/836-le-grand-tournant</guid>
+            <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Les villes intermédiaires, angle mort de la cohésion européenneFabien Verdier  - 5/18/2026]]></title>
+            <description><![CDATA[Les villes intermédiaires, angle mort de la cohésion européenne]]></description>
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/835-les-villes-intermediaires-angle-mort-de-la-cohesion-europeenne</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/835-les-villes-intermediaires-angle-mort-de-la-cohesion-europeenne</guid>
             <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
@@ -76,13 +85,6 @@
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/826-les-operations-militaires-de-l-union-europeenne-partie-1</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/826-les-operations-militaires-de-l-union-europeenne-partie-1</guid>
             <pubDate>Mon, 16 Mar 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Transnistrie : talon d'Achille de l'avenir européen de la Moldavie ?Régis Genté  - 3/9/2026]]></title>
-            <description><![CDATA[Transnistrie : talon d'Achille de l'avenir européen de la Moldavie ?]]></description>
-            <link>https://www.robert-schuman.eu/fr/questions-d-europe/825-transnistrie-talon-d-achille-de-l-avenir-europeen-de-la-moldavie</link>
-            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/825-transnistrie-talon-d-achille-de-l-avenir-europeen-de-la-moldavie</guid>
-            <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
