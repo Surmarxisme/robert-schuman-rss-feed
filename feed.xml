@@ -4,14 +4,19 @@
         <description><![CDATA[Les dernières publications de la Fondation Robert Schuman]]></description>
         <link>https://www.robert-schuman.eu</link>
         <generator>GitHub Actions RSS Generator</generator>
-        <lastBuildDate>Mon, 01 Jun 2026 04:25:22 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jun 2026 11:44:59 GMT</lastBuildDate>
         <atom:link href="https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[fr]]></language>
         <item>
-            <title><![CDATA[Le grand tournantL’Europe n’a jamais changé autant et aussi vite que ces cinq dernières années. Les évènements en sont les moteurs. La pandémie l’avait mise à l’épreuve ; les guerres, puis Trump l’ont défiée. Ils n’étaient pas prévisibles et nul ne peut affirmer a posteriori qu’il avait anticipé ces ruptures profondes avec l’ordre ancien.
-Les Europé...Lire la suiteJean-Dominique Giuliani  - 5/26/2026]]></title>
-            <description><![CDATA[L’Europe n’a jamais changé autant et aussi vite que ces cinq dernières années. Les évènements en sont les moteurs. La pandémie l’avait mise à l’épreuve ; les guerres, puis Trump l’ont défiée. Ils n’étaient pas prévisibles et nul ne peut affirmer a posteriori qu’il avait anticipé ces ruptures profondes avec l’ordre ancien.
-Les Europé...Lire la suite]]></description>
+            <title><![CDATA[La sécurité intérieure : quel rôle pour Europol en soutien des États membres ?Dans un monde en mutation accélérée, marqué par de profonds bouleversements géopolitiques, la sécurité intérieure européenne en subit inévitablement les répercussions. Les recompositions actuelles des relations internationales exercent une pression croissante sur la sécurité intérieure européenne, en rendant plus complexes et plus imprévisibles des menaces de nature structurelle aux...Lire la suiteCatherine De Bolle  - 6/1/2026]]></title>
+            <description><![CDATA[Dans un monde en mutation accélérée, marqué par de profonds bouleversements géopolitiques, la sécurité intérieure européenne en subit inévitablement les répercussions. Les recompositions actuelles des relations internationales exercent une pression croissante sur la sécurité intérieure européenne, en rendant plus complexes et plus imprévisibles des menaces de nature structurelle aux...Lire la suite]]></description>
+            <link>https://www.robert-schuman.eu/fr/questions-d-europe/837-la-securite-interieure-quel-role-pour-europol-en-soutien-des-etats-membres</link>
+            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/837-la-securite-interieure-quel-role-pour-europol-en-soutien-des-etats-membres</guid>
+            <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Le grand tournantJean-Dominique Giuliani  - 5/26/2026]]></title>
+            <description><![CDATA[Le grand tournant]]></description>
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/836-le-grand-tournant</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/836-le-grand-tournant</guid>
             <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
@@ -78,13 +83,6 @@ Les Europé...Lire la suite]]></description>
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/827-les-operations-militaires-de-l-union-europeenne-partie-2</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/827-les-operations-militaires-de-l-union-europeenne-partie-2</guid>
             <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Les opérations militaires de l'Union européenne - Partie 1Nicolas-Jean Brehon  - 3/16/2026]]></title>
-            <description><![CDATA[Les opérations militaires de l'Union européenne - Partie 1]]></description>
-            <link>https://www.robert-schuman.eu/fr/questions-d-europe/826-les-operations-militaires-de-l-union-europeenne-partie-1</link>
-            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/826-les-operations-militaires-de-l-union-europeenne-partie-1</guid>
-            <pubDate>Mon, 16 Mar 2026 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
