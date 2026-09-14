@@ -4,16 +4,19 @@
         <description><![CDATA[Les dernières publications de la Fondation Robert Schuman]]></description>
         <link>https://www.robert-schuman.eu</link>
         <generator>GitHub Actions RSS Generator</generator>
-        <lastBuildDate>Mon, 14 Sep 2026 04:03:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Sep 2026 12:13:44 GMT</lastBuildDate>
         <atom:link href="https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[fr]]></language>
         <item>
-            <title><![CDATA[France – Allemagne – Europe :  retrouver la maîtrise de notre destin1. Le constat
-La situation actuelle des relations franco-allemandes ne peut guère être considérée comme satisfaisante ou positive. Elle est inquiétante et préoccupante : sommes-nous en réalité face à une « mésentente cordiale » ?  Mission impossible ?  Non, mais il faut du courage et un retour à l’essentiel.
-La tentative de rebond en 2019 par le traité d'Ai...Lire la suiteJoachim Bitterlich  - 9/7/2026]]></title>
-            <description><![CDATA[1. Le constat
-La situation actuelle des relations franco-allemandes ne peut guère être considérée comme satisfaisante ou positive. Elle est inquiétante et préoccupante : sommes-nous en réalité face à une « mésentente cordiale » ?  Mission impossible ?  Non, mais il faut du courage et un retour à l’essentiel.
-La tentative de rebond en 2019 par le traité d'Ai...Lire la suite]]></description>
+            <title><![CDATA["Tele 2", dix ans après : embarras et controverses sur l'accès aux données numériquesLe 21 décembre 2016, la Cour de justice de l’Union européenne (CJUE) rendait un arrêt Tele 2 Sverige, dont la portée allait rapidement apparaître comme vertigineuse : il bouleversait les conditions dans lesquelles la justice et les services enquêteurs peuvent exploiter les métadonnées détenues par les ...Lire la suiteJean Mafart  - 9/14/2026]]></title>
+            <description><![CDATA[Le 21 décembre 2016, la Cour de justice de l’Union européenne (CJUE) rendait un arrêt Tele 2 Sverige, dont la portée allait rapidement apparaître comme vertigineuse : il bouleversait les conditions dans lesquelles la justice et les services enquêteurs peuvent exploiter les métadonnées détenues par les ...Lire la suite]]></description>
+            <link>https://www.robert-schuman.eu/fr/questions-d-europe/846-tele-2-dix-ans-apres-embarras-et-controverses-sur-l-acces-aux-donnees-numeriques</link>
+            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/846-tele-2-dix-ans-apres-embarras-et-controverses-sur-l-acces-aux-donnees-numeriques</guid>
+            <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[France – Allemagne – Europe :  retrouver la maîtrise de notre destinJoachim Bitterlich  - 9/7/2026]]></title>
+            <description><![CDATA[France – Allemagne – Europe :  retrouver la maîtrise de notre destin]]></description>
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/845-france-allemagne-europe-retrouver-la-maitrise-de-notre-destin</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/845-france-allemagne-europe-retrouver-la-maitrise-de-notre-destin</guid>
             <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
@@ -80,13 +83,6 @@ La tentative de rebond en 2019 par le traité d'Ai...Lire la suite]]></descripti
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/835-les-villes-intermediaires-angle-mort-de-la-cohesion-europeenne</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/835-les-villes-intermediaires-angle-mort-de-la-cohesion-europeenne</guid>
             <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Qu'attendent les Balkans de l'Union européenne ?Besnik Mustafaj  - 5/11/2026]]></title>
-            <description><![CDATA[Qu'attendent les Balkans de l'Union européenne ?]]></description>
-            <link>https://www.robert-schuman.eu/fr/questions-d-europe/834-qu-attendent-les-balkans-de-l-union-europeenne</link>
-            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/834-qu-attendent-les-balkans-de-l-union-europeenne</guid>
-            <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
