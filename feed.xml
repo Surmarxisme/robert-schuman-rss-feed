@@ -4,12 +4,19 @@
         <description><![CDATA[Les dernières publications de la Fondation Robert Schuman]]></description>
         <link>https://www.robert-schuman.eu</link>
         <generator>GitHub Actions RSS Generator</generator>
-        <lastBuildDate>Mon, 21 Sep 2026 04:02:47 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Sep 2026 12:22:21 GMT</lastBuildDate>
         <atom:link href="https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[fr]]></language>
         <item>
-            <title><![CDATA["Tele 2", dix ans après : embarras et controverses sur l'accès aux données numériquesLe 21 décembre 2016, la Cour de justice de l’Union européenne (CJUE) rendait un arrêt Tele 2 Sverige, dont la portée allait rapidement apparaître comme vertigineuse : il bouleversait les conditions dans lesquelles la justice et les services enquêteurs peuvent exploiter les métadonnées détenues par les ...Lire la suiteJean Mafart  - 9/14/2026]]></title>
-            <description><![CDATA[Le 21 décembre 2016, la Cour de justice de l’Union européenne (CJUE) rendait un arrêt Tele 2 Sverige, dont la portée allait rapidement apparaître comme vertigineuse : il bouleversait les conditions dans lesquelles la justice et les services enquêteurs peuvent exploiter les métadonnées détenues par les ...Lire la suite]]></description>
+            <title><![CDATA[Le pape, l'Europe et la place des religions sur le continent : le tournant de Léon XIVLa venue de Léon XIV à Metz, le 28 septembre, pourrait marquer un moment important de la réflexion pontificale sur l’Europe. Le programme associe une rencontre interreligieuse à une rencontre intitulée « Aux racines de l’Europe pour la paix et l’unité ». Cette proximité résume le déplacement doctrinal qui ...Lire la suiteBlandine Chelini-Pont  - 9/21/2026]]></title>
+            <description><![CDATA[La venue de Léon XIV à Metz, le 28 septembre, pourrait marquer un moment important de la réflexion pontificale sur l’Europe. Le programme associe une rencontre interreligieuse à une rencontre intitulée « Aux racines de l’Europe pour la paix et l’unité ». Cette proximité résume le déplacement doctrinal qui ...Lire la suite]]></description>
+            <link>https://www.robert-schuman.eu/fr/questions-d-europe/847-le-pape-l-europe-et-la-place-des-religions-sur-le-continent-le-tournant-de-leon-xiv</link>
+            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/847-le-pape-l-europe-et-la-place-des-religions-sur-le-continent-le-tournant-de-leon-xiv</guid>
+            <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA["Tele 2", dix ans après : embarras et controverses sur l'accès aux données numériquesJean Mafart  - 9/14/2026]]></title>
+            <description><![CDATA["Tele 2", dix ans après : embarras et controverses sur l'accès aux données numériques]]></description>
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/846-tele-2-dix-ans-apres-embarras-et-controverses-sur-l-acces-aux-donnees-numeriques</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/846-tele-2-dix-ans-apres-embarras-et-controverses-sur-l-acces-aux-donnees-numeriques</guid>
             <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
@@ -76,13 +83,6 @@
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/836-le-grand-tournant</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/836-le-grand-tournant</guid>
             <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Les villes intermédiaires, angle mort de la cohésion européenneFabien Verdier  - 5/18/2026]]></title>
-            <description><![CDATA[Les villes intermédiaires, angle mort de la cohésion européenne]]></description>
-            <link>https://www.robert-schuman.eu/fr/questions-d-europe/835-les-villes-intermediaires-angle-mort-de-la-cohesion-europeenne</link>
-            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/835-les-villes-intermediaires-angle-mort-de-la-cohesion-europeenne</guid>
-            <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
