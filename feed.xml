@@ -4,14 +4,19 @@
         <description><![CDATA[Les dernières publications de la Fondation Robert Schuman]]></description>
         <link>https://www.robert-schuman.eu</link>
         <generator>GitHub Actions RSS Generator</generator>
-        <lastBuildDate>Mon, 02 Nov 2026 05:04:13 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2026 15:06:11 GMT</lastBuildDate>
         <atom:link href="https://surmarxisme.github.io/robert-schuman-rss-feed/feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[fr]]></language>
         <item>
-            <title><![CDATA[Guerre asymétrique des savoirs : l'Europe au cœur de la menacePartie 1
-Face à la compétition sans merci que se livrent les États-Unis et la Chine et aux ambitions exacerbées de certaines puissances régionales, l’Europe peine encore à s’affirmer comme un acteur géopolitique de premier rang. Menacée militairement à ses confins, elle l'est également en son cœur par des offensives hybrides répétées qui attentent ...Lire la suiteAndré Gattolin  - 10/26/2026]]></title>
-            <description><![CDATA[Partie 1
-Face à la compétition sans merci que se livrent les États-Unis et la Chine et aux ambitions exacerbées de certaines puissances régionales, l’Europe peine encore à s’affirmer comme un acteur géopolitique de premier rang. Menacée militairement à ses confins, elle l'est également en son cœur par des offensives hybrides répétées qui attentent ...Lire la suite]]></description>
+            <title><![CDATA[La stratégie maritime européenne à un tournant    Sur vingt-sept États membres, l’Union européenne compte vingt-deux États côtiers, pour des zones économiques exclusives représentant 25 millions de km². Une bonne partie, pour la France notamment, se situe Outre-mer, ce qui confère au continent une dimension planétaire. Cette « évidence maritime »[1] a conduit très tôt, aux prémices des années 20...Lire la suiteLaurent Bechcler - Cyrille Poirier-Coutansais  - 11/2/2026]]></title>
+            <description><![CDATA[Sur vingt-sept États membres, l’Union européenne compte vingt-deux États côtiers, pour des zones économiques exclusives représentant 25 millions de km². Une bonne partie, pour la France notamment, se situe Outre-mer, ce qui confère au continent une dimension planétaire. Cette « évidence maritime »[1] a conduit très tôt, aux prémices des années 20...Lire la suite]]></description>
+            <link>https://www.robert-schuman.eu/fr/questions-d-europe/853-la-strategie-maritime-europeenne-a-un-tournant</link>
+            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/853-la-strategie-maritime-europeenne-a-un-tournant</guid>
+            <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Guerre asymétrique des savoirs : l'Europe au cœur de la menaceAndré Gattolin  - 10/26/2026]]></title>
+            <description><![CDATA[Guerre asymétrique des savoirs : l'Europe au cœur de la menace]]></description>
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/852-guerre-asymetrique-des-savoirs-l-europe-au-c%C5%93ur-de-la-menace</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/852-guerre-asymetrique-des-savoirs-l-europe-au-c%C5%93ur-de-la-menace</guid>
             <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
@@ -78,13 +83,6 @@ Face à la compétition sans merci que se livrent les États-Unis et la Chine et
             <link>https://www.robert-schuman.eu/fr/questions-d-europe/843-une-strategie-de-securite-europeenne-au-service-de-la-paix</link>
             <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/843-une-strategie-de-securite-europeenne-au-service-de-la-paix</guid>
             <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[L'Europe doit financer sa puissanceJean-Marc Vigilant  - 6/29/2026]]></title>
-            <description><![CDATA[L'Europe doit financer sa puissance]]></description>
-            <link>https://www.robert-schuman.eu/fr/questions-d-europe/841-l-europe-doit-financer-sa-puissance</link>
-            <guid isPermaLink="false">https://www.robert-schuman.eu/fr/questions-d-europe/841-l-europe-doit-financer-sa-puissance</guid>
-            <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
